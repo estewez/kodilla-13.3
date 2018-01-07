@@ -1,11 +1,10 @@
 var os = require('os');
 
-var hours = 0,
-    minutes = 0,
-    count = 0;
-var time = parseInt(os.uptime());
-
 function calcTime() {
+    var hours = 0,
+        minutes = 0,
+        count = 0;
+    var time = parseInt(os.uptime());
     parseInt(time)
     if ((time / 3600) > 1){
         count = 0;
@@ -21,9 +20,7 @@ function calcTime() {
         }
         minutes = count;
     }
-    console.log('\nSystem up time is: ' + hours + ' hours, ' + minutes + ' minutes and ' + time + ' seconds.\n');
+    console.log('Uptime: ' + hours + ' hours, ' + minutes + ' minutes and ' + time + ' seconds');
 }
 
-module.exports = {
-    print: calcTime()
-}
+exports.printTime = calcTime;
