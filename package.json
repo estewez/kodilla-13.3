@@ -2,26 +2,10 @@
   "name": "kodilla-task-13.3",
   "version": "1.0.0",
   "description": "taks 13.3",
-  "main": "index.html",
-  "dependencies": {
-    "grunt-browser-sync": "^2.2.0",
-    "grunt": "^1.0.1",
-    "grunt-contrib-jshint": "^1.1.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-sass": "^2.0.0",
-    "grunt-contrib-imagemin": "^2.0.1"
-  },
-  "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-browser-sync": "^2.2.0",
-    "grunt-contrib-imagemin": "^2.0.1",
-    "grunt-contrib-jshint": "^1.1.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-sass": "^2.0.0",
-    "jquery": "^3.2.1"
-  },
+  "main": "./js/app/script.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node ./js/app/script.js"
   },
   "repository": {
     "type": "git",
